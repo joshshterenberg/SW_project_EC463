@@ -13,6 +13,13 @@ from 'mdb-react-ui-kit';
 
 function App() {
   return (
+    <style>
+      body {
+        background: #6a11cb;
+        background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+        background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+      }
+    </style>
     <MDBContainer fluid>
 
       <MDBRow className='d-flex justify-content-center align-items-center h-100'>
