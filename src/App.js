@@ -1,17 +1,20 @@
-import React from 'react'
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import './App.css'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import React from 'react';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
-import Login from './components/login.component'
-import SignUp from './components/signup.component'
-import BasePage from './components/basepage.component'
+import Login from './components/login.component';
+import SignUp from './components/signup.component';
+import BasePage from './components/basepage.component';
+import kitty from './kitty_walk_cycle_2.gif';
 
 function App() {
   return (
     <Router>
+    <head><title>EmotiTweet</title></head>
       <div className="App">
         <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+          <img src={kitty} style={{width: "30px"}} />
           <div className="container">
             <Link className="navbar-brand" to={'/'}>
               EmotiTweet

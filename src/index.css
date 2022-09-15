@@ -82,3 +82,6 @@ html,
 .forgot-password a {
   color: #167bff;
 }
+SocialIcon {
+  margin: 0 auto;
+}

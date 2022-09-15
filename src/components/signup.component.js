@@ -11,13 +11,13 @@ export default class SignUp extends Component {
           <input
             type="text"
             className="form-control"
-            placeholder="Enter Twitter handle that accounts follow (ex. @john_doe)"
+            placeholder="Enter followed account (ex. @john_doe)"
           />
         </div>
 
         <div className="d-grid">
           <button type="submit" className="btn btn-primary">
-            Sign Up
+            Analyze
           </button>
         </div>
       </form>
