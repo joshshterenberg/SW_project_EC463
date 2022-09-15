@@ -4,7 +4,9 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 export default class Login extends Component {
   render() {
     return (
-      <form>
+      <>
+      <style></style>
+      <form method="GET">
         <h3>Single Account Analysis</h3>
 
         <div className="mb-3">
@@ -16,14 +18,15 @@ export default class Login extends Component {
           />
         </div>
 
+	<Link to={'/single'}>
         <div className="d-grid">
-          <Link to={'/single'}>
           <button type="submit" className="btn btn-primary">
             Analyze
           </button>
-          </Link>
         </div>
+	</Link>
       </form>
+      </>
     )
   }
 }
