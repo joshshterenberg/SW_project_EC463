@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Login from './components/login.component';
 import SignUp from './components/signup.component';
 import BasePage from './components/basepage.component';
-import kitty from './kitty_walk_cycle_2.gif';
+import Single from './components/single.component';
+import Multi from './components/multi.component';
 
 function App() {
   return (
@@ -14,7 +15,6 @@ function App() {
     <head><title>EmotiTweet</title></head>
       <div className="App">
         <nav className="navbar navbar-expand-lg navbar-light fixed-top">
-          <img src={kitty} style={{width: "30px"}} />
           <div className="container">
             <Link className="navbar-brand" to={'/'}>
               EmotiTweet
@@ -44,6 +44,8 @@ function App() {
               <Route path="/base-page" element={<BasePage />} />
               <Route path="/sign-in" element={<Login />} />
               <Route path="/sign-up" element={<SignUp />} />
+              <Route path="/single" element={<Single />} />
+              <Route path="/multi" element={<Multi />} />
             </Routes>
           </div>
         </div>

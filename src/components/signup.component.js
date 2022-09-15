@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 export default class SignUp extends Component {
   render() {
@@ -15,11 +16,13 @@ export default class SignUp extends Component {
           />
         </div>
 
-        <div className="d-grid">
+        <Link to={'/multi'}>
+	<div className="d-grid">
           <button type="submit" className="btn btn-primary">
             Analyze
           </button>
         </div>
+	</Link>
       </form>
     )
   }
