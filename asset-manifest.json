@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/SW_project_EC463/static/css/main.4fe3576e.css",
-    "main.js": "/SW_project_EC463/static/js/main.b18729aa.js",
+    "main.js": "/SW_project_EC463/static/js/main.e5a60ce5.js",
     "static/js/787.28cb0dcd.chunk.js": "/SW_project_EC463/static/js/787.28cb0dcd.chunk.js",
     "static/media/kitty_walk_cycle_2.gif": "/SW_project_EC463/static/media/kitty_walk_cycle_2.85be7c8c73ab5bc22744.gif",
     "index.html": "/SW_project_EC463/index.html",
     "main.4fe3576e.css.map": "/SW_project_EC463/static/css/main.4fe3576e.css.map",
-    "main.b18729aa.js.map": "/SW_project_EC463/static/js/main.b18729aa.js.map",
+    "main.e5a60ce5.js.map": "/SW_project_EC463/static/js/main.e5a60ce5.js.map",
     "787.28cb0dcd.chunk.js.map": "/SW_project_EC463/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4fe3576e.css",
-    "static/js/main.b18729aa.js"
+    "static/js/main.e5a60ce5.js"
   ]
 }
