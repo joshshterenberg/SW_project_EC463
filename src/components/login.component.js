@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import React, { Component } from 'react';
+import Collapse from 'react-bootstrap/Collapse';
 
 export default class Login extends Component {
   constructor(props) {
@@ -15,19 +15,23 @@ export default class Login extends Component {
     account.accountName = event.target.value;
     this.setState({account: account });
   }
-  handleClick() {
-    console.log(this.state.account);
+  handleClick(e) {
+    e.preventDefault();
+    console.log(this.state.account.accountName);
+    document.getElementById("blinder").style.display = "block";
+    document.getElementById("antiblinder2").style.display= "none";
+    return false;
   }
   render() {
     return (
       <>
-      <style></style>
-      <form method="GET">
+      <form onSubmit={this.handleClick.bind(this)} style={{display: "block"}} id="antiblinder2">
         <h3>Single Account Analysis</h3>
 
         <div className="mb-3">
           <label>User's Twitter Handle</label>
           <input
+            id="testevent"
             type="text"
             value={this.state.account.accountName}
             onChange={this.handleChange.bind(this)}
@@ -35,15 +39,20 @@ export default class Login extends Component {
             placeholder="Enter Twitter handle (ex. @john_doe)"
           />
         </div>
-
-	<Link to={'/single'}>
         <div className="d-grid">
-          <button type="submit" className="btn btn-primary" onClick={this.handleClick.bind(this)}>
+          <button type="submit" id="myBtn" className="btn btn-primary">
             Analyze
           </button>
         </div>
-	</Link>
       </form>
+
+
+      <div id="blinder" style={{display: "none"}}>
+        <h3>Single Account Analysis</h3>
+        <div><p>{this.state.account.accountName}</p></div>
+	<div><p>item 2</p></div>
+	<div><p>item 3</p></div>
+      </div>
       </>
     )
   }
