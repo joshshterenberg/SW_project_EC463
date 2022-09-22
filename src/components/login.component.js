@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-import Collapse from 'react-bootstrap/Collapse';
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
 
 export default class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      flipflop: false,
       account: {
         accountName: props.accountName
       }
-    }
+    };
   }
   handleChange(event) {
     var account = this.state.account;
@@ -20,7 +21,12 @@ export default class Login extends Component {
     console.log(this.state.account.accountName);
     document.getElementById("blinder").style.display = "block";
     document.getElementById("antiblinder2").style.display= "none";
+    this.setState({flipflop: true});
     return false;
+  }
+  createEmbed() {
+    console.log(this.state.account.accountName);
+    return <TwitterTimelineEmbed sourceType="profile" screenName={`${this.state.account.accountName}`} options={{height: 400}} />
   }
   render() {
     return (
@@ -52,6 +58,7 @@ export default class Login extends Component {
         <div><p>{this.state.account.accountName}</p></div>
 	<div><p>item 2</p></div>
 	<div><p>item 3</p></div>
+        {this.state.flipflop ? this.createEmbed() : null}
       </div>
       </>
     )
