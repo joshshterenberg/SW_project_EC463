@@ -25,12 +25,7 @@ function App() {
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
                   <Link className="nav-link" to={'/sign-in'}>
-                    Single Account Analysis
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to={'/sign-up'}>
-                    Multi-Account Analysis
+                    Account Analysis
                   </Link>
                 </li>
               </ul>

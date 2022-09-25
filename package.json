@@ -22,6 +22,7 @@
     "react-scripts": "5.0.1",
     "react-social-icons": "^5.14.0",
     "react-twitter-embed": "^4.0.4",
+    "sentiment": "^5.0.2",
     "stream": "^0.0.2",
     "web-vitals": "^2.1.4"
   },
