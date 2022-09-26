@@ -13,6 +13,6 @@ bom = botometer.Botometer(wait_on_ratelimit=True,
                           **twitter_app_auth)
 
 
-result = bom.check_account('@clayadavis')
+result = bom.check_account('KDTrey5')
 
 #Result failed to work as elevated access is required for the API
