@@ -43,7 +43,7 @@ def main():
 
     with open('tweets.csv', 'w') as f: 
         write = csv.writer(f) 
-        write.writecolumn(Otweets)
+        write.writerow(tweets)
 
 if __name__ == "__main__":
     main()
